@@ -5,17 +5,20 @@ class Solution {
         int ans=0;
         int end=arr.length-1;
         while(start<=end){
+            
             int mid=(start+end)/2;
+            
             if(arr[mid]<=target){
-                ans=mid+1;
+                
                 start=mid+1;
                 
             }
-            else{
+            else if(arr[mid]>target){
                 end=mid-1;
             }
+           
         }
-        return ans;
+        return start;
         
     }
 }
