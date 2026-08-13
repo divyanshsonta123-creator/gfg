@@ -9,7 +9,7 @@ class Solution {
            
             if(arr[mid]>=target){
                  end=mid-1;
-                ans=mid;
+                
             }
             else{
                 start=mid+1;
@@ -18,6 +18,6 @@ class Solution {
            
             
         }
-        return ans;
+        return start;
     }
 }
